@@ -17,6 +17,9 @@ app.use(morgan('dev'))
 //     return next()
 // })
 
+app.get('/profile',(resq,res)=>{
+    res.send("Hello from profile")
+})
 app.get('/',(req,res)=>{
     res.render('index')
 })
